@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 20px;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 40px;
+}
+
+
+.search-bar input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+
+.nav-icons img {
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.nav-icons img:hover {
+    opacity: 0.7;
+}
+
+
+#postContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-top: 100px;
+}
+
+
+.post {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 500px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.postHeader img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.postHeader .username {
+    font-weight: bold;
+}
+
+
+.postImage img {
+    width: 100%;
+    height: auto;
+}
+
+
+.postDescription {
+    padding: 10px;
+}
+
+.postDescription p {
+    margin: 0;
+}
+
+
+.footerContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #dbdbdb;
+}
+
+
+.footerLeft a {
+    margin: 0 10px;
+    color: #00376b;
+    text-decoration: none;
+}
+
+
+.footerLeft a:hover {
+    text-decoration: underline;
+}
+
+
+.footerCopy {
+    margin-top: 10px;
+    color: #999;
+}
+
+.likeButton,
+.commentButton {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.likeButton:hover,
+.commentButton:hover {
+    background-color: #0056b3;
+}
+
+.commentInput {
+    padding: 5px;
+    margin-right: 5px;
+    width: 70%;
+}
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.liked {
+    color: red; // Rote Farbe für gelikte Buttons
+}
+
+.commentsContainer {
+    margin-top: 10px;
+}
+
+.comment {
+    padding: 5px;
+    margin-top: 2px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+
+
+
+@media (max-width: 530px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-icons img {
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .post {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .postHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .postHeader img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .postImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .postActions {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .commentInput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .commentButton {
+        width: 100%;
+    }
+
+    .commentsContainer {
+        width: 100%;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footerLeft a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footerCopy {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-icons img {
+        height: 16px;
+        margin-left: 5px;
+    }
+
+    .postHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .commentInput {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .commentButton {
+        width: 100%;
+    }
+
+    .commentsContainer {
+        width: 100%;
+    }
+}
